@@ -59,6 +59,8 @@ other claim. If you can somehow draw attention to it, maybe the Elves will be ab
 For example, in the claims above, only claim 3 is intact after all claims are made.
 
 What is the ID of the only claim that doesn't overlap?
+
+Your puzzle answer was 1260.
 """
 
 
@@ -102,6 +104,22 @@ def part_one(input):
     return overlap
 
 
+def part_two(input):
+    cloth = create_cloth(input)
+
+    claims = set()
+    multiple_claims = set()
+
+    for row in cloth:
+        for cell in row:
+            claims.update(cell)
+
+            if len(cell) > 1:
+                multiple_claims.update(cell)
+
+    return claims - multiple_claims
+
+
 test_input = ['#1 @ 1,3: 4x4', '#2 @ 3,1: 4x4', '#3 @ 5,5: 2x2']
 print(part_one(test_input))
 
@@ -109,3 +127,6 @@ with open("Day3.txt") as file:
     file_text = file.readlines()
 
 print(part_one(file_text))
+
+print(part_two(test_input))
+print(part_two(file_text))
