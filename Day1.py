@@ -1,5 +1,3 @@
-
-
 """
 --- Day 1: Chronal Calibration ---
 "We've detected some temporal anomalies," one of Santa's Elves at the Temporal Anomaly Research and Detection Instrument Station tells you. She sounded pretty worried when she called you down here. "At 500-year intervals into the past, someone has been changing Santa's history!"
@@ -29,8 +27,6 @@ Starting with a frequency of zero, what is the resulting frequency after all of 
 
 Your puzzle answer was 536.
 
-The first half of this puzzle is complete! It provides one gold star: *
-
 --- Part Two ---
 You notice that the device repeats the same frequency change list over and over. To calibrate the device, you need to find the first frequency it reaches twice.
 
@@ -52,7 +48,10 @@ Here are other examples:
 -6, +3, +8, +5, -6 first reaches 5 twice.
 +7, +7, -2, -7, -4 first reaches 14 twice.
 What is the first frequency your device reaches twice?
+
+Your puzzle answer was 75108.
 """
+
 
 def part_2(input_numbers):
     seen = {}
