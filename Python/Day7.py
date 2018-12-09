@@ -9,7 +9,9 @@ Ancient Nordic Elvish. Could the device on your wrist also be a translator? "Tho
 this." They hand you a heavy coat.
 
 "We do need to find our way back to the North Pole, but we have higher priorities at the moment. You see, believe it or
-not, this box contains something that will solve all of Santa's transportation problems - at least, that's what it looks like from the pictures in the instructions." It doesn't seem like they can read whatever language it's in, but you can: "Sleigh kit. Some assembly required."
+not, this box contains something that will solve all of Santa's transportation problems - at least, that's what it looks
+like from the pictures in the instructions." It doesn't seem like they can read whatever language it's in, but you can:
+"Sleigh kit. Some assembly required."
 
 "'Sleigh'? What a wonderful name! You must help us assemble this 'sleigh' at once!" They start excitedly pulling more
 parts out of the box.
@@ -79,9 +81,12 @@ Second   Worker 1   Worker 2   Done
   13        E          .       CABFD
   14        E          .       CABFD
   15        .          .       CABFDE
-Each row represents one second of time. The Second column identifies how many seconds have passed as of the beginning of that second. Each worker column shows the step that worker is currently doing (or . if they are idle). The Done column shows completed steps.
+Each row represents one second of time. The Second column identifies how many seconds have passed as of the beginning of
+ that second. Each worker column shows the step that worker is currently doing (or . if they are idle). The Done column
+ shows completed steps.
 
-Note that the order of the steps has changed; this is because steps now take time to finish and multiple workers can begin multiple steps simultaneously.
+Note that the order of the steps has changed; this is because steps now take time to finish and multiple workers can
+begin multiple steps simultaneously.
 
 In this example, it would take 15 seconds for two workers to complete these steps.
 
